@@ -1,0 +1,147 @@
+id: '16944596038270.7559639064954082'
+definitionId: bubbleMap
+parentSlotId: '16944591851270.15599462010236098'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 119
+  xs:
+    gridItem:
+      x: 0
+      y: 240
+      w: 24
+      h: 60
+properties:
+  name: bubbleMap
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  data: |-
+    [
+      {
+        name: 'Bangladesh',
+        value: 4850,
+        latitude: 24,
+        longitude: 90
+      },
+      {
+        name: 'Brazil',
+        value: 12675,
+        latitude: -10,
+        longitude: -55
+      },
+      {
+        name: 'China',
+        value: 27850,
+        latitude: 35,
+        longitude: 105
+      },
+      {
+        name: 'Congo, Dem. Rep.',
+        value: 3125,
+        latitude: 0,
+        longitude: 25
+      },
+      {
+        name: 'Egypt',
+        value: 10935,
+        latitude: 27,
+        longitude: 30
+      },
+      {
+        name: 'Ethiopia',
+        value: 4035,
+        latitude: 8,
+        longitude: 38
+      },
+      {
+        name: 'Germany',
+        value: 13485,
+        latitude: 51,
+        longitude: 9
+      },
+      {
+        name: 'India',
+        value: 28765,
+        latitude: 20,
+        longitude: 77
+      },
+      {
+        name: 'Indonesia',
+        value: 14750,
+        latitude: -5,
+        longitude: 120
+      },
+      {
+        name: 'Iran',
+        value: 9850,
+        latitude: 32,
+        longitude: 53
+      },
+      {
+        name: 'Japan',
+        value: 14785,
+        latitude: 36,
+        longitude: 138
+      },
+      {
+        name: 'Mexico',
+        value: 11350,
+        latitude: 23,
+        longitude: -102
+      },
+      {
+        name: 'Nigeria',
+        value: 10875,
+        latitude: 10,
+        longitude: 8
+      },
+      {
+        name: 'Pakistan',
+        value: 10750,
+        latitude: 30,
+        longitude: 70
+      },
+      {
+        name: 'Philippines',
+        value: 9350,
+        latitude: 13,
+        longitude: 122
+      },
+      {
+        name: 'Russia',
+        value: 13485,
+        latitude: 60,
+        longitude: 100
+      },
+      {
+        name: 'Thailand',
+        value: 7250,
+        latitude: 15,
+        longitude: 100
+      },
+      {
+        name: 'Turkey',
+        value: 10850,
+        latitude: 39,
+        longitude: 35
+      },
+      {
+        name: 'United States',
+        value: 31500,
+        latitude: 38,
+        longitude: -97
+      },
+      {
+        name: 'Vietnam',
+        value: 6850,
+        latitude: 16,
+        longitude: 106
+      }
+    ]
+actions: {}
+index: 1
+slots: []

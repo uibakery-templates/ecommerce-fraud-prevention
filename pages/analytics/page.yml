@@ -1,0 +1,29 @@
+id: '16944591851270.9105141197187003'
+name: Analytics
+url: analytics
+roleIds: []
+disableInMenu: false
+parentPageId: ''
+index: 2
+slots:
+  - id: '16944591851270.2530246130330751'
+    name: content
+    children:
+      - id: '16944591851270.09078232138185616'
+        definitionId: grid
+        parentSlotId: '16944591851270.2530246130330751'
+        styles: {}
+        properties:
+          name: analytics
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16944591851270.15599462010236098'
+            name: content
+            children:
+              - components/card/card.yml
+              - components/bubbleMap.yml
+              - components/card2/card2.yml

@@ -1,0 +1,24 @@
+id: '16944590223000.9836220971395087'
+name: content
+children:
+  - id: '16944590223020.4642696802008215'
+    definitionId: layoutHeader
+    parentSlotId: '16944590223000.9836220971395087'
+    styles:
+      xl:
+        backgroundColor:
+          value: default
+          dataValue: '#061B5A'
+          withData: true
+    properties:
+      name: layoutHeader
+      __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+        - xl
+        - xs
+    index: 0
+    slots:
+      - id: '16944590223020.8414695448613483'
+        name: content
+        children:
+          - components/horizontalMenu.yml
+          - components/contextMenuButton.yml

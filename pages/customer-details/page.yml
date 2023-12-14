@@ -1,0 +1,29 @@
+id: '16944329131120.11422215987344875'
+name: Customer Details
+url: customer-details
+roleIds: []
+disableInMenu: true
+parentPageId: ''
+index: 1
+slots:
+  - id: '16944329131120.9419692400625426'
+    name: content
+    children:
+      - id: '16944329131120.20027932137062088'
+        definitionId: grid
+        parentSlotId: '16944329131120.9419692400625426'
+        styles: {}
+        properties:
+          name: customer-details
+          pageTitle: '{{app.name}} - {{activeRoute.name}}'
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        index: 0
+        slots:
+          - id: '16944329131120.4029376184781057'
+            name: content
+            children:
+              - components/heading.yml
+              - components/orderdetailsDetail.yml
+              - components/button.yml

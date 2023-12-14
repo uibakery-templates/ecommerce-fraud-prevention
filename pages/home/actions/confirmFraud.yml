@@ -1,0 +1,39 @@
+id: '16944460282080.08981753759059674'
+name: confirmFraud
+nameConfigured: true
+steps:
+  - id: '16944460350930.8975636197944263'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: return {{data}};
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: false
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.confirmFraud.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.confirmFraud.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.confirmFraud.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+kind: workflow
+index: 3

@@ -1,0 +1,107 @@
+storeItemList:
+  - id: '16944606508780.5750342049940231'
+    name: fraudReported
+    value: []
+    valueType: array
+    initialValue: []
+    version: 1
+metadata:
+  favicon: ''
+  code: >-
+    <script>
+
+    function convertDaysToReadableFormat(days) {
+        const DAYS_IN_WEEK = 7;
+        const DAYS_IN_MONTH = 30.44; // average
+        const DAYS_IN_YEAR = 365.25; // accounting for leap years
+
+        if (days >= DAYS_IN_YEAR) {
+            const years = Math.round(days / DAYS_IN_YEAR);
+            return years + (years === 1 ? " year" : " years");
+        } else if (days >= DAYS_IN_MONTH) {
+            const months = Math.round(days / DAYS_IN_MONTH);
+            return months + (months === 1 ? " month" : " months");
+        } else if (days >= DAYS_IN_WEEK) {
+            const weeks = Math.round(days / DAYS_IN_WEEK);
+            return weeks + (weeks === 1 ? " week" : " weeks");
+        } else {
+            return days + (days === 1 ? " day" : " days");
+        }
+    }
+
+
+    function generateRiskEmojiString({ high_risk_signal }) { 
+      let result = '';
+      if (high_risk_signal.distance_from_home_IP) {
+        result += '📍 ';
+      }
+      if (high_risk_signal.mismatch_shipping_billing) {
+        result += '📦 ';
+      }
+      if (high_risk_signal.multiple_failed_payments) {
+        result += '❌ ';
+      }
+      if (high_risk_signal.card_order_name_mismatch) {
+        result += '💳 ';
+      }
+      if (high_risk_signal.large_order_amount) {
+        result += '🔝 ';
+      }
+      if (high_risk_signal.rapid_ordering) {
+        result += '🚀 ';
+      }
+      return result
+    }
+
+
+    function generateRiskTooltipString({ high_risk_signal, distance_from_home_km
+    }) { 
+      let result = '';
+      let index = 1;
+      if (high_risk_signal.distance_from_home_IP) {
+        result += `${index++}. High distance between billing address and IP: ${distance_from_home_km}km\n`;
+      }
+      if (high_risk_signal.mismatch_shipping_billing) {
+        result += `${index++}. Shipping and billing address do not match\n`;
+      }
+      if (high_risk_signal.multiple_failed_payments) {
+        result += `${index++}. Multiple failed payment attempts\n`;
+      }
+      if (high_risk_signal.card_order_name_mismatch) {
+        result += `${index++}. Customer name and name on card do not match\n`;
+      }
+      if (high_risk_signal.large_order_amount) {
+        result += `${index++}. Large order amount\n`;
+      }
+      if (high_risk_signal.rapid_ordering) {
+        result += `${index++}. Rapid ordering`;
+      }
+      return result
+    }
+
+
+    </script>
+
+    <style>
+      ub-horizontal-menu a[nbButton].active {
+        background-color: rgb(69 112 246 / 37%)!important;
+      }
+      
+      .no-shadow button {
+        filter: none!important;
+      }
+      
+       ub-textarea ub-base-label {
+        display: inline!important;
+      }
+    </style>
+  title: Ecommerce Fraud Prevention
+  description: ''
+  breakpoints: []
+appSettings:
+  properties:
+    defaultData: '{}'
+  actions: {}
+  gridVersion: 2
+  density: default
+internalType: project

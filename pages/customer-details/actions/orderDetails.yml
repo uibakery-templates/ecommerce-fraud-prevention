@@ -1,0 +1,45 @@
+id: '16944609763960.3526869421447012'
+name: orderDetails
+nameConfigured: true
+steps:
+  - id: '16944609863490.5515769941726811'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: >-
+          const customerId = {{activeRoute.queryParams.customer_id}};
+
+          await {{actions.getFraudientOrders.trigger()}}
+
+          return {{actions.getFraudientOrders.data}}.find((o) => o.customer_id
+          == customerId);
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentPageId: '16944329131120.11422215987344875'
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.orderDetails.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.orderDetails.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.orderDetails.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+assigned: false
+selected: true
+configured: true
+kind: workflow
+index: 4

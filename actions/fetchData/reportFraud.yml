@@ -1,0 +1,94 @@
+id: '16944605470720.049122941598847225'
+name: reportFraud
+nameConfigured: true
+steps:
+  - id: '16944606624010.7002156151459313'
+    type: putInStore
+    name: save
+    params:
+      - type: name
+        value: '16944606508780.5750342049940231'
+        valueType: string
+      - type: value
+        value: '[...{{state.getValue(''fraudReported'')}}, {{params}}]'
+        valueType: interpolatedValue
+        interpolationType: code
+      - type: producible
+        value: true
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16944607198440.8600387605132211'
+    type: executeAction
+    name: execute
+    params:
+      - type: action
+        value: '16944317001880.10836020842053329'
+        valueType: string
+      - type: isActionsLibraryCall
+        value: false
+        valueType: string
+      - type: customParams
+        value: return {{data}};
+        valueType: string
+      - type: successMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: failureMapper
+        value: ''
+        valueType: interpolatedValue
+      - type: mapperEnabled
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+  - id: '16944608956760.8567165454790675'
+    type: showToast
+    name: notification
+    params:
+      - type: message
+        value: Fraud reported
+        valueType: interpolatedValue
+      - type: type
+        value: success
+        valueType: string
+      - type: icon
+        value: checkmark-circle-2
+        valueType: string
+      - type: duration
+        value: '3000'
+        valueType: interpolatedValue
+      - type: position
+        value: top-end
+        valueType: string
+      - type: hideOnClick
+        value: false
+        valueType: custom
+    level: 0
+    fallthroughError: false
+    isChanged: true
+singleStep: false
+mode: manual
+modeConfigured: false
+parentId: '16944317048260.5063472427753506'
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.reportFraud.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.reportFraud.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.reportFraud.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: true
+assigned: false
+selected: true
+configured: false
+kind: workflow
+index: 1
