@@ -1,10 +1,22 @@
-<h3 align="center">
+<h3>
   An Ecommerce Fraud Prevention application built with <a href="https://uibakery.io">UI Bakery</a> low-code platform.
 </h3>
 
 <p>
-  A UI tool to review potentially fraudulent transactions and perform operations on them.
+  A UI tool to review potentially fraudulent transactions and perform operations on them. This tool empowers you to proactively monitor suspicious transactions, delve into customer details, and extract analytical insights on fraud trends, ensuring the safety and integrity of online transactions.
 </p>
+
+<h3>Tool components</h3>
+- Suspicious Transaction Page:
+  - View a curated list of potentially fraudulent transactions, detailing order id, order sum, customer name, total orders from that customer, and various fraud signals.
+  - Verify the status of email and phone verifications associated with each transaction.
+  - Take swift action by marking any transaction as "Fraud" with an easy-to-access button.
+- Customer Details Page:
+  - Obtain an in-depth perspective of each customer, allowing for comprehensive due diligence and validation.
+- Fraud Analytics Page:
+  - Geographical Fraud Hotspots: A dynamic map highlighting regions most afflicted by fraud, enabling businesses to strategize preventive measures more effectively.
+  - Timeline of Fraudulent Events: An area chart combined with a Bubble Map, illustrating fraud events over time. This assists in identifying patterns and peak fraud periods.
+  - Payment Method Analysis: A bar chart showcasing the Comparison of Fraud Incidents by Payment Method, which provides insights into which payment gateways or methods are most susceptible to fraud.
 
 <h3 align="center">
   <a href="https://cloud.uibakery.io/auth/register?utm_source=github&utm_campaign=github_templates">Create account for free</a>
