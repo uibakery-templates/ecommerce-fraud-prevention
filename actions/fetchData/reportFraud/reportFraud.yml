@@ -30,7 +30,7 @@ steps:
         value: false
         valueType: string
       - type: customParams
-        value: return {{data}};
+        value: ./execute-customParams.js
         valueType: string
       - type: successMapper
         value: ''
@@ -91,4 +91,3 @@ assigned: false
 selected: true
 configured: false
 kind: workflow
-index: 1

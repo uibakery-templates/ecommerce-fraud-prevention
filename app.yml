@@ -83,7 +83,7 @@ metadata:
     </script>
 
     <style>
-      ub-horizontal-menu a[nbButton].active {
+      ub-horizontal-menu a[nbButton].active, ub-horizontal-menu a[nbButton]:hover {
         background-color: rgb(69 112 246 / 37%)!important;
       }
       
@@ -103,5 +103,5 @@ appSettings:
     defaultData: '{}'
   actions: {}
   gridVersion: 2
-  density: default
+  density: compact
 internalType: project

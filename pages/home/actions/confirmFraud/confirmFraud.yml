@@ -7,7 +7,7 @@ steps:
     name: code
     params:
       - type: asyncCode
-        value: return {{data}};
+        value: ./code.js
         valueType: interpolatedValue
         interpolationType: code
     level: 0
@@ -36,4 +36,3 @@ assigned: false
 selected: true
 configured: true
 kind: workflow
-index: 3
