@@ -4,7 +4,6 @@ url: customer-details
 roleIds: []
 disableInMenu: true
 parentPageId: ''
-index: 1
 slots:
   - id: '16944329131120.9419692400625426'
     name: content

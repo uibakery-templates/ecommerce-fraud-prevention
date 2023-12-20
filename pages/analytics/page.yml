@@ -4,7 +4,6 @@ url: analytics
 roleIds: []
 disableInMenu: false
 parentPageId: ''
-index: 2
 slots:
   - id: '16944591851270.2530246130330751'
     name: content

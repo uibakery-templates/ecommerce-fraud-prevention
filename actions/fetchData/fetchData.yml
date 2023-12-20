@@ -29,4 +29,3 @@ config:
 assigned: false
 selected: false
 kind: folder
-index: 0
